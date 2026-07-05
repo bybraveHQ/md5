@@ -1,0 +1,57 @@
+{
+  "name": "@bybrave/md5",
+  "version": "5.0.0",
+  "description": "Maintained MD5 fork: zero runtime dependencies, ESM + CommonJS, built-in TypeScript types, correct ArrayBuffer/TypedArray/DataView hashing. Drop-in for md5.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "dist/"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node --test",
+    "test-types": "tsc --strict --noEmit --moduleResolution bundler --target es2020 --types node test/types.ts",
+    "prepublishOnly": "npm run build && npm test && npm run test-types"
+  },
+  "keywords": [
+    "md5",
+    "hash",
+    "digest",
+    "message-digest",
+    "crypto",
+    "esm",
+    "typescript"
+  ],
+  "author": "bybrave",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bybraveHQ/md5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bybraveHQ/md5/issues"
+  },
+  "homepage": "https://github.com/bybraveHQ/md5#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}

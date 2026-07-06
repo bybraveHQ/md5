@@ -76,6 +76,15 @@ Two intentional behaviour changes in this major release:
 - **`ArrayBuffer` / `DataView` / other typed arrays** now hash their real bytes (they were broken before — see #49).
 - **Raw numbers/objects** now hash as `String(value)` (`md5(1003) === md5('1003')`). If you relied on the old number coercion, pass a string explicitly to reproduce a specific legacy value.
 
+## Support
+
+If this package saves you time, you can support maintenance:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/bybrave)
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-BTC-F7931A?logo=bitcoin&logoColor=white)](#support)
+
+Bitcoin (BTC): `bc1q37557q5jpeaxqydzwvf3jgj7zhnfpn2td3q40q`
+
 ## License
 
 BSD-3-Clause. Copyright © Paul Vorbach, Jeff Mott; fork © bybrave.

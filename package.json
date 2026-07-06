@@ -1,6 +1,6 @@
 {
   "name": "@bybrave/md5",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Maintained MD5 fork: zero runtime dependencies, ESM + CommonJS, built-in TypeScript types, correct ArrayBuffer/TypedArray/DataView hashing. Drop-in for md5.",
   "type": "module",
   "main": "./dist/index.cjs",
